@@ -9,22 +9,21 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
-    @Column(name = "login_phone")
-
+    @Column(name = "login_phone",unique = true,nullable = false,length = 20)
     private String login_phone;
-    @Column(name = "name")
+    @Column(name = "name",nullable = false,length = 20)
     private String name;
-    @Column(name = "otchestvo")
+    @Column(name = "otchestvo",length = 20)
     private String otchestvo;
-    @Column(name = "surname")
+    @Column(name = "surname",nullable = false,length = 20)
     private String surname;
-    @Column(name = "department")
+    @Column(name = "department",nullable = false,length = 20)
     private String department;
-    @Column(name = "sector")
+    @Column(name = "sector",nullable = false,length = 20)
     private String sector;
-    @Column(name = "work_center")
+    @Column(name = "work_center",length = 20)
     private String work_center;
-    @Column(name = "job_title")
+    @Column(name = "job_title",length = 20)
     private String job_title;
 
     public Employee() {
