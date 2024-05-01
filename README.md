@@ -15,7 +15,8 @@
 - **src/main/java**: Исходные файлы Java, содержащие классы, контроллеры, сервисы и модели, необходимые для работы REST API.
 - **src/main/resources**: Ресурсы, такие как файлы конфигурации, миграции базы данных и другие ресурсы.
 - Для работы с базой SQL нужно создать и настроить файл src/main/resources/application.properties:  
-spring.application.name=employee.rest.api  
+spring.application.name=employee.rest.api
+server.port=8080  
 spring.datasource.url=jdbc:mysql://your_ip_adress:3306/order_db?useSSL=false&serverTimezone=UTC  
 spring.datasource.username=USER  
 spring.datasource.password=PASSWORD  
